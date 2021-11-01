@@ -74,3 +74,58 @@ in my case to run dev enviroment i do:
 ```flutter run --flavor dev -t lib/main_dev.dart```
 
 And now your enviroments is separeted.
+if you have running on vscode, you can easyly add this setting in your project to run on debug diferents enviroments
+```
+  {
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Development",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "-t",
+                "lib/main_dev.dart",
+                "--flavor",
+                "dev"
+            ]
+        },
+        {
+            "name": "Quality",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "-t",
+                "lib/main_qa.dart",
+                "--flavor",
+                "qa"
+            ]
+        },
+        {
+            "name": "Homologation",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "-t",
+                "lib/main_hom.dart",
+                "--flavor",
+                "hom"
+            ]
+        },
+        {
+            "name": "Production",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "-t",
+                "lib/main_prod.dart",
+                "--flavor",
+                "prod"
+            ],
+        },
+    ]
+}
+```
