@@ -133,5 +133,5 @@ if you have running on vscode, you can easyly add this setting in your project t
   
 Run with command:
 ```flutter build <your target> --flavor <Your env Name> -t lib/main_<Your class of env name>.dart```
-in my case to run dev enviroment i do:
+in my case to build appbundle prod enviroment i do:
 ```flutter build appbundle --flavor prod -t lib/main_prod.dart```
