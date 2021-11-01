@@ -1,6 +1,6 @@
 # Flutter Flavours
 
-[flutter enviroments](https://dev.to/flippedcoding/difference-between-development-stage-and-production-d0p)
+[development enviroments](https://dev.to/flippedcoding/difference-between-development-stage-and-production-d0p)
 
 A demo using [Flutter flavorizr](https://pub.dev/packages/flutter_flavorizr) to create multiples flavors(enviroments) in this case, i create four envs being them: Quality Assurance(Qa), Development(Dev), Homologation(Hom) and Production(Prod)
 
