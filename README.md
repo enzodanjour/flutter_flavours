@@ -66,9 +66,9 @@ This step add all config in android/app/build.gradle and ios directories to run 
 P.S.: Your CI can remove the unecessary enviroments to all devs has resources, with for example production keys of firebase
 6. in flavours.dart you can config to create base url to connect with api simply seeing the enviroment.
 
-## Steps to run
+## Steps to run the env
 
-Run with command:
+Run command above:
 ```flutter run --flavor <Your env Name> -t lib/main_<Your class of env name>.dart```
 in my case to run dev enviroment i do:
 ```flutter run --flavor dev -t lib/main_dev.dart```
@@ -129,3 +129,9 @@ if you have running on vscode, you can easyly add this setting in your project t
     ]
 }
 ```
+## Steps to build flavours
+  
+Run with command:
+```flutter build <your target> --flavor <Your env Name> -t lib/main_<Your class of env name>.dart```
+in my case to run dev enviroment i do:
+```flutter build appbundle --flavor prod -t lib/main_prod.dart```
